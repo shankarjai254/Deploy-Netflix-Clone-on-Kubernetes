@@ -18,14 +18,7 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/shankarjai254/Deploy-Netflix-Clone-on-Kubernetes.git'
             }
         }
-        // stage('Build with Maven'){
-        //     steps{
-        //         sh "mvn clean package -DskipTests"
-        //     }
-        // }
-        //
-        //
-        
+
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
