@@ -20,7 +20,7 @@ pipeline{
         }
 //       stage('Build with Maven') {
 //            steps {
-//                sh "mvn clean package -DskipTests"
+//                sh "mvn clean package -DskipTests"qwidjqwifdhq wfiwqhef wqoifh ewof   ew feo  hf ewofhoewf ewof
 //            }
         stage("Sonarqube Analysis "){
             steps{
