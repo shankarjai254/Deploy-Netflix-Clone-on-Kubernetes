@@ -22,6 +22,10 @@ pipeline{
         //     steps{
         //         sh "mvn clean package -DskipTests"
         //     }
+        // }
+        //
+        //
+        
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
