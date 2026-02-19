@@ -2,7 +2,7 @@ pipeline{
     agent any
     tools{
         jdk 'jdk17'  // added Java JDK path
-        nodejs 'node16'
+        nodejs 'node16'  // Addded node 16 path 
     }
     environment {
         SCANNER_HOME=tool 'sonar-scanner'
@@ -18,6 +18,8 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/shankarjai254/Deploy-Netflix-Clone-on-Kubernetes.git'
             }
         }
+        // stage('Build with Maven'){
+        //     steps{
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
