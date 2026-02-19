@@ -1,7 +1,7 @@
 pipeline{
     agent any
     tools{
-        jdk 'jdk17'
+        jdk 'jdk17'  // added Java JDK path
         nodejs 'node16'
     }
     environment {
