@@ -20,6 +20,8 @@ pipeline{
         }
         // stage('Build with Maven'){
         //     steps{
+        //         sh "mvn clean package -DskipTests"
+        //     }
         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
